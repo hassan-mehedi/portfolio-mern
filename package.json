@@ -1,0 +1,34 @@
+{
+    "name": "mern",
+    "version": "1.0.0",
+    "description": "This is a MERN template project",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/hassan-mehedi/MERN-template.git"
+    },
+    "author": "Mehedi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hassan-mehedi/MERN-template/issues"
+    },
+    "homepage": "https://github.com/hassan-mehedi/MERN-template#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.1",
+        "concurrently": "^7.0.0",
+        "config": "^3.3.7",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "mongoose": "^6.2.1",
+        "validation": "0.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
