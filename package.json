@@ -1,7 +1,7 @@
 {
-    "name": "mern",
+    "name": "portfolio",
     "version": "1.0.0",
-    "description": "This is a MERN template project",
+    "description": "This is a portfolio with MERN template project",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,20 +10,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/hassan-mehedi/MERN-template.git"
+        "url": "git@github.com:hassan-mehedi/portfolio-mern.git"
     },
     "author": "Mehedi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/hassan-mehedi/MERN-template/issues"
+        "url": "git@github.com:hassan-mehedi/portfolio-mern.git/issues"
     },
-    "homepage": "https://github.com/hassan-mehedi/MERN-template#readme",
+    "homepage": "git@github.com:hassan-mehedi/portfolio-mern.git#readme",
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.1",
         "concurrently": "^7.0.0",
         "config": "^3.3.7",
         "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
         "express": "^4.17.2",
         "mongoose": "^6.2.1",
         "validation": "0.0.1"
