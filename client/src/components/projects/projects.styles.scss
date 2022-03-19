@@ -1,5 +1,68 @@
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+.container {
+    perspective: 1250px;
+    background: #100000;
+    padding-top: 10%;
+    height: 100vh;
+    overflow: hidden;
+    .projects {
+        transform-style: preserve-3d;
+        height: 100vh;
+        transform-origin: 50% 50% -550px;
+        transition: 1.5s;
+        .project {
+            width: 350px;
+            height: 450px;
+            position: absolute;
+            left: 40%;
+            transform-origin: 50% 50% -500px;
+            outline: 1px solid transparent;
+        }
+        .project:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+        .project:nth-child(2) {
+            transform: rotateY(-45deg);
+        }
+        .project:nth-child(3) {
+            transform: rotateY(-90deg);
+        }
+        .project:nth-child(4) {
+            transform: rotateY(-135deg);
+        }
+        .project:nth-child(5) {
+            transform: rotateY(-175deg);
+        }
+        .project:nth-child(6) {
+            transform: rotateY(-220deg);
+        }
+    }
+    .project-controls {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .controller {
+            cursor: pointer;
+            color: #fff;
+            margin: 5%;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: 0.6s color;
+            line-height: 0;
+        }
+
+        .controller:hover {
+            color: #888;
+        }
+    }
+}
+
+.container:hover {
+    .projects {
+        transform-origin: 55% 50% -420px;
+    }
 }

@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 
 export default function Project({ project }) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }} className="project">
             <CardMedia component="img" alt={project.name} height="200" image={project.image} />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
