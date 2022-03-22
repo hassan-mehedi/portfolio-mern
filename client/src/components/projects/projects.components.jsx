@@ -4,7 +4,7 @@ import "./projects.styles.scss";
 
 export default function Projects({ projects }) {
     const [angle, setAngle] = useState(0);
-    const gallerySpin = (sign) => {
+    const spinnerController = (sign) => {
         const projects = document.querySelector(".projects");
         if (!sign) {
             setAngle(angle + 45);
@@ -32,22 +32,22 @@ export default function Projects({ projects }) {
                     ))}
                 </div>
                 <div className="project-controls">
-                    <button
+                    <span
                         className="controller"
                         onClick={(event) => {
-                            gallerySpin("-");
+                            spinnerController("-");
                         }}
                     >
                         &lt;
-                    </button>
-                    <button
+                    </span>
+                    <span
                         className="controller"
                         onClick={(event) => {
-                            gallerySpin("");
+                            spinnerController("");
                         }}
                     >
                         &gt;
-                    </button>
+                    </span>
                 </div>
             </div>
         </React.Fragment>
