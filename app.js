@@ -20,6 +20,10 @@ mongoose
 // Start the server
 app.listen(config.PORT, () => console.log(`Listening on ${config.PORT}`));
 
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname + "./client/build/index.html"));
+});
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -22,8 +22,12 @@ export default function Project({ project }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">GitHub</Button>
-                <Button size="small">Live</Button>
+                <Button size="small" onClick={(event) => window.open(project.github, "_blank")}>
+                    GitHub
+                </Button>
+                <Button size="small" onClick={(event) => window.open(project.live, "_blank")}>
+                    Live
+                </Button>
             </CardActions>
         </Card>
     );
