@@ -1,5 +1,6 @@
 import "./App.css";
 import Projects from "./components/projects/Projects.components";
+import Skills from "./components/skills/skills.components";
 
 function App() {
     const projects = [
@@ -93,6 +94,7 @@ function App() {
     return (
         <div className="App">
             <Projects projects={projects} />
+            <Skills />
         </div>
     );
 }
